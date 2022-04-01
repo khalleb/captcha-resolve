@@ -4,7 +4,7 @@ import glob
 from PIL import Image
 
 
-def tratar_images(pasta_origem, pasta_destino='ajeitado'):
+def tratar_imagens(pasta_origem, pasta_destino='ajeitado'):
     # Lendo todas a imagens
     arquivos = glob.glob(f"{pasta_origem}/*")
     for arquivo in arquivos:
@@ -35,4 +35,4 @@ def tratar_images(pasta_origem, pasta_destino='ajeitado'):
 
 
 if __name__ == "__main__":
-    tratar_images('bdcaptcha')
+    tratar_imagens('bdcaptcha')
